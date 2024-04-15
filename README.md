@@ -44,10 +44,10 @@ Developed to streamline backend development, this boilerplate is your solution f
 - Navigate: `cd express-typescript-2024`
 - Install dependencies: `npm ci`
 
-### Step 2: ⚙️ Environment Configuration
+### ~~ Step 2: ⚙️ Environment Configuration ~~ (preconfigured to .env.development)
 
-- Create `.env`: Copy `.env.template` to `.env`
-- Update `.env`: Fill in necessary environment variables
+- ~~ Create `.env`: Copy `.env.template` to `.env` ~~
+- ~~ Update `.env`: Fill in necessary environment variables ~~
 
 ### Step 3: 🏃‍♂️ Running the Project
 
@@ -60,31 +60,13 @@ Developed to streamline backend development, this boilerplate is your solution f
 ```
 .
 ├── api
-│   ├── healthCheck
-│   │   ├── __tests__
-│   │   │   └── healthCheckRouter.test.ts
-│   │   └── healthCheckRouter.ts
-│   └── user
-│       ├── __tests__
-│       │   ├── userRouter.test.ts
-│       │   └── userService.test.ts
-│       ├── userModel.ts
-│       ├── userRepository.ts
-│       ├── userRouter.ts
-│       └── userService.ts
-├── api-docs
-│   ├── __tests__
-│   │   └── openAPIRouter.test.ts
-│   ├── openAPIDocumentGenerator.ts
-│   ├── openAPIResponseBuilders.ts
-│   └── openAPIRouter.ts
+│   ├── example
 ├── common
 │   ├── __tests__
 │   │   ├── errorHandler.test.ts
 │   │   └── requestLogger.test.ts
 │   ├── middleware
 │   │   ├── errorHandler.ts
-│   │   ├── rateLimiter.ts
 │   │   └── requestLogger.ts
 │   ├── models
 │   │   └── serviceResponse.ts
