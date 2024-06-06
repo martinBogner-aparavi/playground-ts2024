@@ -1,3 +1,4 @@
+import bodyParser from 'body-parser';
 import cors from 'cors';
 import express, { Express } from 'express';
 import helmet from 'helmet';
@@ -21,6 +22,9 @@ app.use(helmet());
 
 // Request logging
 app.use(requestLogger);
+
+// parse request bodies as json
+app.use(bodyParser.json());
 
 // Routes
 app.use('/example', exampleRouter);
