@@ -31,7 +31,6 @@ export const exampleRouter: Router = (() => {
 
   router.post('/', async (req: Request, res: Response) => {
     const payload = req.body as { id: number; data: any };
-    console.log(payload);
 
     const serviceResponse = new ServiceResponse(
       ResponseStatus.Success,
@@ -39,6 +38,7 @@ export const exampleRouter: Router = (() => {
       payload.data,
       StatusCodes.OK
     );
+
     handleServiceResponse(serviceResponse, res);
   });
 
